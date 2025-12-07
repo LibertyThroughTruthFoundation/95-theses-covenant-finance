@@ -73,8 +73,10 @@ This work is licensed under the MIT License - see the [LICENSE](LICENSE) file fo
 ## Community
 
 - **Website**: [libertythroughtruth.org](https://libertythroughtruth.org)
+- **Gab**: [@LibertyThroughTruth](https://gab.com/LibertyThroughTruth) (Primary contact)
 - **X (Twitter)**: [@LTTFoundation](https://x.com/LTTFoundation)
 - **GitHub**: [LibertyThroughTruthFoundation](https://github.com/LibertyThroughTruthFoundation)
+- **Email**: [libertythroughtruth@proton.me](mailto:libertythroughtruth@proton.me)
 
 ## Acknowledgments
 
