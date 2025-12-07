@@ -1,0 +1,318 @@
+/* manifesto.css */
+/* A SOVEREIGN STYLESHEET - NO DEPENDENCIES */
+
+/* BASE: A PALETTE OF TRUTH */
+:root {
+    --color-parchment: #f8f4e9;
+    --color-ink: #333332;
+    --color-vermillion: #9e2b2b;
+    --color-gold: #c9a467;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-white: #ffffff;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* THE SCROLL */
+body {
+    background-color: #ddd;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.7;
+    color: var(--color-ink);
+    padding: 0;
+    margin: 0;
+}
+
+/* NAVIGATION SIDEBAR */
+.thesis-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--color-ink);
+    color: var(--color-parchment);
+    padding: 2rem 1.5rem;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.nav-header h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-gold);
+    border-bottom: 2px solid var(--color-gold);
+    padding-bottom: 0.5rem;
+}
+
+.nav-sections {
+    list-style: none;
+}
+
+.nav-sections li {
+    margin-bottom: 0.75rem;
+}
+
+.nav-sections a {
+    color: var(--color-parchment);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.nav-sections a:hover {
+    color: var(--color-gold);
+}
+
+.nav-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-gold);
+}
+
+.github-link {
+    color: var(--color-gold);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
+
+/* SCROLL CONTAINER */
+.scroll-container {
+    max-width: 900px;
+    margin: 2rem auto 2rem 270px;
+    background-color: var(--color-parchment);
+    padding: 3rem;
+    box-shadow: 0 0 30px var(--color-shadow);
+    border: 1px solid var(--color-gold);
+    /* Creates the "rolled paper" effect */
+    background-image:
+        linear-gradient(90deg, rgba(201,164,103,0.1) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(201,164,103,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* THE HEADER - WHERE IT IS NAILED */
+.manifesto-header {
+    text-align: center;
+    border-bottom: 3px solid var(--color-vermillion);
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+.manifesto-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: var(--color-ink);
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-style: italic;
+    color: var(--color-vermillion);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.preamble {
+    max-width: 700px;
+    margin: 1.5rem auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-ink);
+}
+
+.date {
+    font-style: italic;
+    color: var(--color-gold);
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+/* THE THESES THEMSELVES */
+.theses-container {
+    display: grid;
+    gap: 2.5rem;
+}
+
+.thesis-section {
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--color-vermillion);
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-gold);
+    padding-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    font-style: italic;
+    color: var(--color-ink);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.thesis-card {
+    padding: 1.5rem;
+    border-left: 5px solid var(--color-gold);
+    background-color: rgba(255, 255, 255, 0.8);
+    break-inside: avoid;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thesis-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px var(--color-shadow);
+}
+
+.thesis-number {
+    font-weight: bold;
+    color: var(--color-vermillion);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.thesis-slogan {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--color-ink);
+    font-weight: bold;
+}
+
+.thesis-content p {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+}
+
+.thesis-content strong {
+    color: var(--color-vermillion);
+}
+
+.thesis-content em {
+    color: var(--color-gold);
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* NAIL IT BUTTON */
+.nail-it-btn {
+    background-color: var(--color-vermillion);
+    color: var(--color-white);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-family: inherit;
+    transition: background-color 0.2s;
+}
+
+.nail-it-btn:hover {
+    background-color: #7a1f1f;
+}
+
+/* THE FOOTER - THE SEAL */
+.manifesto-footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--color-gold);
+}
+
+.seal {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--color-vermillion);
+    margin-bottom: 0.5rem;
+}
+
+.attribution {
+    font-size: 1rem;
+    color: var(--color-ink);
+    margin-bottom: 0.25rem;
+}
+
+.year {
+    font-style: italic;
+    color: var(--color-gold);
+    font-size: 0.9rem;
+}
+
+/* LOADING STATE */
+.loading {
+    text-align: center;
+    padding: 3rem;
+    font-style: italic;
+    color: var(--color-gold);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .thesis-nav {
+        width: 200px;
+    }
+    
+    .scroll-container {
+        margin-left: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .thesis-nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+    
+    .scroll-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .manifesto-header h1 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* PRINT STYLESHEET */
+@media print {
+    body {
+        background-color: white;
+    }
+    
+    .thesis-nav {
+        display: none;
+    }
+    
+    .scroll-container {
+        margin: 0;
+        box-shadow: none;
+        border: none;
+        max-width: 100%;
+    }
+    
+    .nail-it-btn {
+        display: none;
+    }
+    
+    .thesis-card {
+        page-break-inside: avoid;
+    }
+}

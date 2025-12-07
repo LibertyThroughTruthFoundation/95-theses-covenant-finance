@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The 95 Theses of Covenant Finance - A declaration against hollow crypto promises and the foundation for covenant economics">
+    <meta property="og:title" content="The 95 Theses of Covenant Finance">
+    <meta property="og:description" content="Nailed to the Digital Door of the Modern Church of Crypto">
+    <meta property="og:type" content="website">
+    <title>The 95 Theses of Covenant Finance</title>
+    <link rel="stylesheet" href="css/manifesto.css">
+</head>
+<body>
+    <!-- Navigation Sidebar -->
+    <nav class="thesis-nav">
+        <div class="nav-header">
+            <h3>The 95 Theses</h3>
+        </div>
+        <ul class="nav-sections">
+            <li><a href="#foundation">Foundation (1-15)</a></li>
+            <li><a href="#language">Language (16-30)</a></li>
+            <li><a href="#technical">Technical (31-45)</a></li>
+            <li><a href="#economic">Economic (46-60)</a></li>
+            <li><a href="#community">Community (61-75)</a></li>
+            <li><a href="#sovereignty">Sovereignty (76-90)</a></li>
+            <li><a href="#covenant">Covenant (91-95)</a></li>
+        </ul>
+        <div class="nav-footer">
+            <a href="https://github.com/LibertyThroughTruthFoundation/95-theses-covenant-finance" class="github-link" target="_blank">📖 View on GitHub</a>
+        </div>
+    </nav>
+
+    <!-- The Scroll Container -->
+    <div class="scroll-container">
+        <!-- The Header - The Nail -->
+        <header class="manifesto-header">
+            <h1>The 95 Theses<br>of Covenant Finance</h1>
+            <p class="subtitle">Nailed to the Digital Door of the Modern Church of Crypto</p>
+            <p class="preamble">Out of love for the truth and a desire to bring it to light, the following propositions on the failures of "trustless" finance and the foundation of Covenant Finance will be debated and declared.</p>
+            <p class="date">Anno Domini 2025</p>
+        </header>
+
+        <!-- The Theses Container (populated by JavaScript) -->
+        <main class="theses-container" id="theses-container">
+            <div class="loading">Loading the 95 Theses...</div>
+        </main>
+
+        <!-- The Seal - The Signature -->
+        <footer class="manifesto-footer">
+            <p class="seal">Soli Deo Gloria</p>
+            <p class="attribution">Liberty Through Truth Foundation</p>
+            <p class="year">Anno Domini 2025</p>
+        </footer>
+    </div>
+
+    <script src="js/theses-data.js"></script>
+    <script src="js/manifesto.js"></script>
+</body>
+</html>
